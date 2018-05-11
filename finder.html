@@ -1,0 +1,332 @@
+<!--
+1. nav bar arrows need to go on either side of nav links
+2. ancestry search did not work on this site or original site
+3. yahoo personals search returns eharmony website for this and original website
+4. add borders around age and zip code for yahoo search jumbotron
+5. white collar crime page link no longer exists
+6. personal injury attorney near you page no longer exists
+7. california missing persons list no longer exists
+7.Email Search box from original site does not load when copied
+9.email tab for yahoo search does not work when submit is pressed
+-->
+<html lang="en">
+  <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Free People Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/aidan.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  </head>
+
+  <body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="logo">
+              <tbody><tr>
+                <td>
+                  <a href="index.html"><img border="0" src="http://www.freepeoplesearch.info/images/freepeoplesearch.jpg" alt="free people search and finder" width="100%" height="98"></a><br><br>
+                </td>
+                <td></td>
+              </tr>
+            </tbody></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="dropdown">
+              <center><button onclick="myFunction()" class="btn dropbtn">&#9776;</button></center>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="people.html">People Search</a>
+                <a href="number.html">Phone Number Search</a>
+                <a href="email.html">Email People Search</a>
+                <a href="peopleSearch.html">People Search Engines</a>
+                <a href="finder.html">People Finder</a>
+                <a href="reversePhone.html">Reverse Phone Search</a>
+                <a href="ancestry1.html">Ancestry Search</a>
+                <a href="eharmony.html">eHarmony</a>
+                <a href="yahoo.html">Yahoo Personals</a>
+                <a href="resources.html">Resources</a>
+              </div>
+            </div>
+            <ul class="navbar-nav header">
+              <li class="nav-item">
+                <a class="nav-link" href="people.html">People Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="number.html">Phone Number Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="email.html">Email People Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="peopleSearch.html">People Search Engines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="finder.html">People Finder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reversePhone.html">Reverse Phone Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ancestry1.html">Ancestry Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="eharmony.html">eHarmony</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="yahoo.html">Yahoo Personals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="jumbotron" id="finder">
+        <!--To account for header covering content while navbar scrolls-->
+        <div id="finder1"></div>
+       <div class="row">
+         <div class="col-xs-12">
+           <h3>People Finder</h3>
+         </div>
+       </div>
+         <div class="row">
+           <div class="col-xs-12">
+             <form target="_blank" action="http://www.peoplesmart.com/PSP.aspx?" method="get">
+               <input type="hidden" name="_act" value="loadinggo">
+               <input type="hidden" name="search" value="name">
+               <input type="hidden" name="cam" value="1004">
+               <input type="hidden" name="utm_source" value="FreePeopleSearch.info">
+               <input type="hidden" name="utm_medium" value="banners">
+               <input type="hidden" name="utm_campaign" value="HomePage">
+               <table cellpadding="0" cellspacing="0" border="0" width="300" height="150" style="empty-cells:show">
+                 <tbody><tr>
+    	              <td width="300" height="23" align="right" style="background-color:#0071bc">
+        	             <table cellpadding="0" cellspacing="0" border="0" width="295" height="23">
+
+                         <tbody><tr>
+
+    			                    <td width="295" height="23" style="font:bold 15px arial; color:#ffffff">Access Billions of Records. Start here:</td>
+                            </tr>
+
+                          </tbody></table>
+    	                   </td>
+                       </tr>
+                       <tr>
+    	                    <td width="300" height="125" align="right" style="border:solid 1px #0071bc; background-color:#e6e6e6">
+
+        	                   <table cellpadding="0" cellspacing="0" border="0" width="284" height="76">
+                               <tbody><tr>
+
+    			                          <td width="140" style="font:10px arial; color:#000000">First Name</td>
+                                    <td width="144" style="font:10px arial; color:#000000">Last Name</td>
+
+                                  </tr>
+                                  <tr>
+    			                             <td><input type="text" name="firstname" size="15" maxlength="60" value="" tabindex="1" style="width:132px"></td>
+
+                                       <td><input type="text" name="lastname" size="15" maxlength="60" value="" tabindex="2" style="width:132px"></td>
+                                     </tr>
+                                     <tr>
+
+    			                                <td style="font:10px arial; color:#000000">City</td>
+                                          <td style="font:10px arial; color:#000000">State</td>
+
+                                        </tr>
+                                        <tr>
+
+    			                                   <td><input type="text" name="city" size="15" maxlength="60" value="" tabindex="3" style="width:132px"></td>
+                                             <td><select name="state" tabindex="4" style="width:132px">
+                                               <option value="US" selected="selected">Nationwide</option>
+
+                                               <option value="AL">Alabama </option>
+                                               <option value="AK">Alaska </option>
+
+                                               <option value="AR">Arkansas </option>
+
+                                               <option value="AZ">Arizona </option>
+                                               <option value="CA">California </option>
+                                               <option value="CO">Colorado </option>
+
+                                               <option value="CT">Connecticut </option>
+                                               <option value="DE">Delaware </option>
+
+                                               <option value="DC">District of Columbia </option>
+                                               <option value="FL">Florida </option>
+                                               <option value="GA">Georgia </option>
+                                               <option value="HI">Hawaii </option>
+
+                                               <option value="ID">Idaho </option>
+                                               <option value="IL">Illinois </option>
+
+                                               <option value="IN">Indiana </option>
+                                               <option value="IA">Iowa </option>
+                                               <option value="KS">Kansas </option>
+                                               <option value="KY">Kentucky </option>
+
+                                               <option value="LA">Louisiana </option>
+
+                                               <option value="ME">Maine </option>
+
+                                               <option value="MD">Maryland </option>
+                                               <option value="MA">Massachusetts </option>
+                                               <option value="MI">Michigan </option>
+                                               <option value="MN">Minnesota </option>
+
+                                               <option value="MS">Mississippi </option>
+                                               <option value="MO">Missouri </option>
+
+                                               <option value="MT">Montana </option>
+                                               <option value="NE">Nebraska </option>
+                                               <option value="NV">Nevada </option>
+                                               <option value="NH">New Hampshire </option>
+
+                                               <option value="NJ">New Jersey </option>
+                                               <option value="NM">New Mexico </option>
+
+                                               <option value="NY">New York </option>
+                                               <option value="NC">North Carolina </option>
+                                               <option value="ND">North Dakota </option>
+
+                                               <option value="OH">Ohio </option>
+
+                                               <option value="OK">Oklahoma </option>
+                                               <option value="OR">Oregon </option>
+
+                                               <option value="PA">Pennsylvania </option>
+                                               <option value="RI">Rhode Island </option>
+
+                                               <option value="SC">South Carolina </option>
+                                               <option value="SD">South Dakota </option>
+
+                                               <option value="TN">Tennessee </option>
+                                               <option value="TX">Texas </option>
+
+                                               <option value="UT">Utah </option>
+
+                                               <option value="VT">Vermont </option>
+                                               <option value="VA">Virginia </option>
+                                               <option value="WA">Washington </option>
+
+                                               <option value="WV">West Virginia </option>
+                                               <option value="WI">Wisconsin </option>
+
+                                               <option value="WY">Wyoming </option>
+                                             </select></td>
+                                           </tr>
+                                           <tr>
+            	                                <td style="padding-top:3px">&nbsp;</td>
+
+                                              <td style="padding-top:3px"><input type="image" src="http://www.freepeoplesearch.info/images/people-search-button.gif" width="144" height="26" value="Submit" tabindex="5"></td>
+                                            </tr>
+                                          </tbody></table>
+
+    	                                   </td>
+                                       </tr>
+                                     </tbody></table>
+
+
+                                   </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>
+                Find lost family and friends with our people finder. This finds people based on first and last name, and state of residence. Some of the results on this search are not free. You may need to use the paid service in order to deep search on the person you are looking for. If you do not want to use a paid service, try the free <a href="people.html">people search</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+    <div class="container-fluid">
+      <nav class="navbar">
+        <div class="row">
+          <div class="col-xs-12">
+            <center><ul class="navbar-nav center">
+              <li class="nav-item">
+                <p class="foot"><a class="nav-link" href="privacy.html">Our Privacy Policy</a></p>
+              </li>
+              <li class="nav-item">
+                <p class="foot"><a class="nav-link" href="contact.html">Contact Webmaster</a></p>
+              </li>
+              <li class="nav-item">
+                <p class="foot"><a class="nav-link" href="state.html">State Search</a></p>
+              </li>
+            </ul></center>
+          </div>
+        </div>
+      </nav>
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-center">
+          © Copyright 2002-2018 FreePeopleSearch.info. All rights reserved.
+        </p>
+      </div>
+    </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.navigation.js"></script>
+    <script src="js/owl.animate.js"></script>
+    <script src="js/owl.autoheight.js"></script>
+    <script src="js/owl.autoplay.js"></script>
+    <script src="js/owl.autorefresh.js"></script>
+    <script src="js/owl.hash.js"></script>
+    <script src="js/owl.lazyload.js"></script>
+    <script src="js/owl.support.js"></script>
+    <script src="js/owl.support.modernizr.js"></script>
+    <script src="js/hamburgerMenu.js"></script>
+  </body>
+</html>

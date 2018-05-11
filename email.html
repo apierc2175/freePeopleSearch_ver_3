@@ -1,0 +1,246 @@
+<!--
+1. nav bar arrows need to go on either side of nav links
+2. ancestry search did not work on this site or original site
+3. yahoo personals search returns eharmony website for this and original website
+4. add borders around age and zip code for yahoo search jumbotron
+5. white collar crime page link no longer exists
+6. personal injury attorney near you page no longer exists
+7. california missing persons list no longer exists
+7.Email Search box from original site does not load when copied
+9.email tab for yahoo search does not work when submit is pressed
+-->
+<html lang="en">
+  <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Free People Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/aidan.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  </head>
+
+  <body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="logo">
+              <tbody><tr>
+                <td>
+                  <a href="index.html"><img border="0" src="http://www.freepeoplesearch.info/images/freepeoplesearch.jpg" alt="free people search and finder" width="100%" height="98"></a><br><br>
+                </td>
+                <td></td>
+              </tr>
+            </tbody></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="dropdown">
+              <center><button onclick="myFunction()" class="btn dropbtn">&#9776;</button></center>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="people.html">People Search</a>
+                <a href="number.html">Phone Number Search</a>
+                <a href="email.html">Email People Search</a>
+                <a href="peopleSearch.html">People Search Engines</a>
+                <a href="finder.html">People Finder</a>
+                <a href="reversePhone.html">Reverse Phone Search</a>
+                <a href="ancestry1.html">Ancestry Search</a>
+                <a href="eharmony.html">eHarmony</a>
+                <a href="yahoo.html">Yahoo Personals</a>
+                <a href="resources.html">Resources</a>
+              </div>
+            </div>
+            <ul class="navbar-nav header">
+              <li class="nav-item">
+                <a class="nav-link" href="people.html">People Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="number.html">Phone Number Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="email.html">Email People Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="peopleSearch.html">People Search Engines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="finder.html">People Finder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reversePhone.html">Reverse Phone Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ancestry1.html">Ancestry Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="eharmony.html">eHarmony</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="yahoo.html">Yahoo Personals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="jumbotron" id="email">
+        <!--To account for header covering content while navbar scrolls-->
+        <div id="email1"></div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Email</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <!--Email search box copied from original website will not load-->
+            <center>
+              <iframe id="iframe_emailfinderpro" src="efp_search/frame_content.html?tab=forward&amp;sou=6&amp;cam=75&amp;borderc=0000FF&amp;hl_forward=Find+someone's+current+email+and+contact+information&amp;hl_reverse=Find+out+more+information+about+an+email+address&amp;bgc=F4F4F4&amp;tabc=0000FF" frameborder="0" scrollbars="no" style="width: 500px; height: 210px;">
+              </iframe>
+            </center>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <table cellpadding="3" cellspacing="0" width="100%" border="0">
+            <tbody><tr bgcolor="#dcdcdc">
+            <td colspan="2"><b>Yahoo Email Search</b></td>
+            </tr>
+            <tr>
+            <td><b>First Name/Initial</b><br><input type="text" name="first" value=""></td>
+            <td><b>Last Name</b> (required)<br><input type="text" name="last" req="1" value=""></td>
+            <td width="110">&nbsp;</td></tr>
+            <tr>
+            <td colspan="2" valign="bottom">
+            <input type="hidden" name="meta" value="pplt=e">
+            <input type="submit" value="Search" class="btn btn-primary">
+            <input type="hidden" name="fr" value="php-emai">
+            <input type="hidden" name="fr2" value="">
+            &nbsp;&nbsp;
+            </td></tr>
+            </tbody></table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <form action="http://wwp.icq.com/scripts/SearchWWP.dll" method="POST">
+            <table cellpadding="3" cellspacing="0" width="100%" border="0">
+            <tbody><tr bgcolor="#dcdcdc">
+            <td colspan="2"><b>ICQ Email Directory</b></td>
+            </tr>
+            <tr>
+            <td><b>First Name</b><br><input type="TEXT" name="first" maxlength="256" size="22" value=""></td>
+            <td><b>Last Name</b><br><input type="text" name="last" maxlength="256" size="22" value=""></td>
+            <td width="110">&nbsp;</td></tr>
+
+            <tr><td><b>NickName</b><br><input type="TEXT" name="handle" maxlength="256" size="22" value=""></td><td>
+            Search by Name <font color="#FF0000">or</font><br> by Nickname</td><td>&nbsp;</td></tr>
+            <tr>
+            <td valign="bottom"><input type="submit" value="Search" class="btn btn-primary">
+            &nbsp;&nbsp;
+            <input type="reset" value="Reset" class="btn btn-primary">&nbsp;&nbsp;
+            </td></tr>
+            </tbody></table>
+            </form>
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              Searching for an email address can be a tough task, most people do their best to hide their email address to prevent spam email. For conducting email people searches, it is best to use as many sources as possible. These are the most popular and effective email search tools:
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </main>
+
+    <footer>
+    <div class="container-fluid">
+      <nav class="navbar">
+        <div class="row">
+          <div class="col-xs-12">
+            <center><ul class="navbar-nav center">
+              <li class="nav-item">
+                <p class="foot"><a class="nav-link" href="privacy.html">Our Privacy Policy</a></p>
+              </li>
+              <li class="nav-item">
+                <p class="foot"><a class="nav-link" href="contact.html">Contact Webmaster</a></p>
+              </li>
+              <li class="nav-item">
+                <p class="foot"><a class="nav-link" href="state.html">State Search</a></p>
+              </li>
+            </ul></center>
+          </div>
+        </div>
+      </nav>
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-center">
+          © Copyright 2002-2018 FreePeopleSearch.info. All rights reserved.
+        </p>
+      </div>
+    </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.navigation.js"></script>
+    <script src="js/owl.animate.js"></script>
+    <script src="js/owl.autoheight.js"></script>
+    <script src="js/owl.autoplay.js"></script>
+    <script src="js/owl.autorefresh.js"></script>
+    <script src="js/owl.hash.js"></script>
+    <script src="js/owl.lazyload.js"></script>
+    <script src="js/owl.support.js"></script>
+    <script src="js/owl.support.modernizr.js"></script>
+    <script src="js/hamburgerMenu.js"></script>
+  </body>
+</html>

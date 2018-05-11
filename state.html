@@ -1,0 +1,236 @@
+<!--
+1. nav bar arrows need to go on either side of nav links
+2. ancestry search did not work on this site or original site
+3. yahoo personals search returns eharmony website for this and original website
+4. add borders around age and zip code for yahoo search jumbotron
+5. white collar crime page link no longer exists
+6. personal injury attorney near you page no longer exists
+7. california missing persons list no longer exists
+7.Email Search box from original site does not load when copied
+9.email tab for yahoo search does not work when submit is pressed
+-->
+<html lang="en">
+  <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Free People Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/aidan.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  </head>
+
+  <body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <<div class="row">
+          <div class="col-xs-12">
+            <div class="logo">
+              <tbody><tr>
+                <td>
+                  <a href="index.html"><img border="0" src="http://www.freepeoplesearch.info/images/freepeoplesearch.jpg" alt="free people search and finder" width="100%" height="98"></a><br><br>
+                </td>
+                <td></td>
+              </tr>
+            </tbody></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="dropdown">
+              <center><button onclick="myFunction()" class="btn dropbtn">&#9776;</button></center>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="people.html">People Search</a>
+                <a href="number.html">Phone Number Search</a>
+                <a href="email.html">Email People Search</a>
+                <a href="peopleSearch.html">People Search Engines</a>
+                <a href="finder.html">People Finder</a>
+                <a href="reversePhone.html">Reverse Phone Search</a>
+                <a href="ancestry1.html">Ancestry Search</a>
+                <a href="eharmony.html">eHarmony</a>
+                <a href="yahoo.html">Yahoo Personals</a>
+                <a href="resources.html">Resources</a>
+              </div>
+            </div>
+            <ul class="navbar-nav header">
+              <li class="nav-item">
+                <a class="nav-link" href="people.html">People Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="number.html">Phone Number Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="email.html">Email People Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="peopleSearch.html">People Search Engines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="finder.html">People Finder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reversePhone.html">Reverse Phone Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ancestry1.html">Ancestry Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="eharmony.html">eHarmony</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="yahoo.html">Yahoo Personals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="jumbotron" id="state">
+        <!--To account for header covering content while navbar scrolls-->
+        <div id="state1"></div>
+         <div class="row">
+          <div class="col-xs-12">
+            <h3>State Search</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <h4>California</h4>
+                <p class="text-left">
+                  <a href="http://vitals.rootsweb.ancestry.com/ca/death/search.cgi">California Death Records</a> -Search California death records. Search by name, maiden name, birth year and birth place.
+                </p>
+                <p class="text-left">
+                  <a href="https://inmatelocator.cdcr.ca.gov/default.aspx">California Inmate Locator</a> -Locate inmates in a California prison. Search by last name or inmate number.
+                </p>
+                <p class="text-left">
+                  <a href="https://www.meganslaw.ca.gov/">Sex Offender Search</a> -Search for registered sex offenders in CA. Search by name, address, city, parks, schools or county. Interactive maps shows locations of residence.
+                </p>
+              <h4>Florida</h4>
+                <p class="text-left">
+                  <a href="https://www.myfloridacounty.com/official_records/index.html">Florida State Document Official Records Search</a> -Search official records for the state of Florida.
+                </p>
+                <p class="text-left">
+                  <a href="https://registration.elections.myflorida.com/CheckVoterStatus">Voter Status Search</a> -Search the FL voter database by name and date of birth.
+                </p>
+                <p class="text-left">
+                  <a href="http://www.obitsarchive.com/obituaries/usa/florida?#">Obituary Search</a> -Florida Obituary search.
+                </p>
+                <p class="text-left">
+                  <a href="http://www.dc.state.fl.us/AppCommon/">Corrections Database Search</a> -Search the Florida Department of Corrections by name.
+                </p>
+              <h4>New York</h4>
+                <p class="text-left">
+                  <a href="http://nysdoccslookup.doccs.ny.gov/kinqw00">NY Tax Inmate Lookup</a> -Search the NY inmate population by name or number.
+                </p>
+                <p class="text-left">
+                  <a href="http://www.obitsarchive.com/obituaries/usa/new-york?">Obituary Search</a> -Obituary search for New York State.
+                </p>
+                <p class="text-left">
+                  <a href="https://www.dos.ny.gov/corps/tax_warrant_search.html">NY Tax Warrant Search</a> -Search tax records to find people or relevant information that can help you locate them.
+                </p>
+                <p class="text-left">
+                  <a href="http://www.criminaljustice.ny.gov/SomsSUBDirectory/search_index.jsp">Public Registry of Sex Offenders in New York</a> -Look up sex offenders by name, county or zip code.
+                </p>
+              <h4>Texas</h4>
+              <p class="text-left">
+                <a href="http://www.dps.texas.gov/mpch/">Texas Missing Persons Search</a> -Search the TX missing persons database by name or case number.
+              </p>
+              <p class="text-left">
+                <a href="https://records.txdps.state.tx.us/DpsWebsite/CriminalHistory/">Texas Criminal History Name Search</a> -Search by name for arrests, prosecutions and the disposition of the case for persons arrested for Class B misdemeanor or greater violation in Texas.
+              </p>
+              <p class="text-left">
+                <a href="https://www.texastribune.org/library/data/texas-prisons/">Inmate Search by Texas Prison Facility</a> -Lookup people at various prison facilities in Texas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+    <div class="container-fluid">
+      <nav class="navbar">
+        <div class="row">
+          <div class="col-xs-12">
+            <center><ul class="navbar-nav center">
+              <li class="nav-item">
+                <p class="foot"><a class="nav-link" href="privacy.html">Our Privacy Policy</a></p>
+              </li>
+              <li class="nav-item">
+                <p class="foot"><a class="nav-link" href="contact.html">Contact Webmaster</a></p>
+              </li>
+              <li class="nav-item">
+                <p class="foot"><a class="nav-link" href="state.html">State Search</a></p>
+              </li>
+            </ul></center>
+          </div>
+        </div>
+      </nav>
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-center">
+          © Copyright 2002-2018 FreePeopleSearch.info. All rights reserved.
+        </p>
+      </div>
+    </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.navigation.js"></script>
+    <script src="js/owl.animate.js"></script>
+    <script src="js/owl.autoheight.js"></script>
+    <script src="js/owl.autoplay.js"></script>
+    <script src="js/owl.autorefresh.js"></script>
+    <script src="js/owl.hash.js"></script>
+    <script src="js/owl.lazyload.js"></script>
+    <script src="js/owl.support.js"></script>
+    <script src="js/owl.support.modernizr.js"></script>
+    <script src="js/hamburgerMenu.js"></script>
+  </body>
+</html>

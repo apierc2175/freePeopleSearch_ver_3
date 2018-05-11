@@ -1,0 +1,205 @@
+<!--
+1. nav bar arrows need to go on either side of nav links
+2. ancestry search did not work on this site or original site
+3. yahoo personals search returns eharmony website for this and original website
+4. add borders around age and zip code for yahoo search jumbotron
+5. white collar crime page link no longer exists
+6. personal injury attorney near you page no longer exists
+7. california missing persons list no longer exists
+7.Email Search box from original site does not load when copied
+9.email tab for yahoo search does not work when submit is pressed
+-->
+<html lang="en">
+  <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Free People Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/aidan.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  </head>
+
+  <body>
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-fixed-top">
+        <div class="row">
+          <div class="col-xs-6">
+            <table width="760" align="center" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td>
+                  <a href="index.html"><img border="0" src="http://www.freepeoplesearch.info/images/freepeoplesearch.jpg" alt="free people search and finder" width="723" height="98"></a><br><br>
+                </td>
+                <td></td>
+              </tr>
+            </tbody></table>
+          </div>
+          <div class="col-xs-6">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="dropdown">
+              <center><button onclick="myFunction()" class="btn dropbtn">&#9776;</button></center>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="people.html">People Search</a>
+                <a href="number.html">Phone Number Search</a>
+                <a href="email.html">Email People Search</a>
+                <a href="peopleSearch.html">People Search Engines</a>
+                <a href="finder.html">People Finder</a>
+                <a href="reversePhone.html">Reverse Phone Search</a>
+                <a href="ancestry1.html">Ancestry Search</a>
+                <a href="eharmony.html">eHarmony</a>
+                <a href="yahoo.html">Yahoo Personals</a>
+                <a href="resources.html">Resources</a>
+              </div>
+            </div>
+            <ul class="navbar-nav header">
+              <li class="nav-item">
+                <a class="nav-link" href="people.html">People Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="number.html">Phone Number Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="email.html">Email People Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="peopleSearch.html">People Search Engines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="finder.html">People Finder</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reversePhone.html">Reverse Phone Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ancestry1.html">Ancestry Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="eharmony.html">eHarmony</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="yahoo.html">Yahoo Personals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resources.html">Resources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="jumbotron" id="ancestry">
+  <!--To account for header covering content while navbar scrolls-->
+        <div id="ancestry1"></div>
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="http://www.gendir.com/" class="ancestry"><h3>Ancestry Search</h3></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <center><form action="http://www.gendir.com/surnames.php" method="POST">
+                <b>Surname Search</b><br>
+                First Name: (optional)<input size="12" type="text" name="fname" value=""><br>
+                Last Name:     <input type="text" name="lname" value="" size="12">
+                <input type="submit" class="btn btn-primary"value="Search">
+              </form></center>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>
+                Find ancestors, or perform a family tree search using this ancestry search. A basic detail search is free, and you can try a free trial of the advanced search and other services.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+    <div class="container-fluid">
+      <nav class="navbar">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="navbar-nav center">
+              <li class="nav-item">
+                <a class="nav-link" href="privacy.html">Our Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Webmaster</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="state.html">State Search</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="text-center">
+          © Copyright 2002-2018 FreePeopleSearch.info. All rights reserved.
+        </p>
+      </div>
+    </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.navigation.js"></script>
+    <script src="js/owl.animate.js"></script>
+    <script src="js/owl.autoheight.js"></script>
+    <script src="js/owl.autoplay.js"></script>
+    <script src="js/owl.autorefresh.js"></script>
+    <script src="js/owl.hash.js"></script>
+    <script src="js/owl.lazyload.js"></script>
+    <script src="js/owl.support.js"></script>
+    <script src="js/owl.support.modernizr.js"></script>
+    <script src="js/hamburgerMenu.js"></script>
+  </body>
+</html>
